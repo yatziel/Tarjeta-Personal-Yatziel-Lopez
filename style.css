@@ -84,12 +84,19 @@ button {
 }
 
 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
   padding: var(--padding-xs);
   border-radius: 8px;
   background-color: var(--white);
   box-shadow: var(--shadow-icon);
+}
+
+.icon svg {
+  stroke: var(--base);
 }
 
 .main {
@@ -188,6 +195,7 @@ button {
     height: 40px;
   }
 }
+/* Estilos de escritorio */
 
 @media screen and (min-width: 1024px) {
   .card {
@@ -201,6 +209,15 @@ button {
   .icon {
     width: 48px;
     height: 48px;
+  }
+
+  .icon:hover {
+    background-color: var(--base);
+  }
+
+  .icon:hover svg {
+    /* filter: brightness(100); */
+    stroke: var(--white);
   }
 
   .main {
