@@ -33,6 +33,15 @@
   --font-size-n: 1rem;
 }
 
+body.dark {
+  /* Scheme Dark Mode  */
+  --base: #c2afe9;
+  --highlight: #6436c4;
+  --shadow: #2f195c;
+  --white: #211d29;
+  --black: #f1eef7;
+}
+
 * {
   margin: 0;
   padding: 0;
