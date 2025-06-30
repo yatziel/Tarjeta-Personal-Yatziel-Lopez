@@ -93,6 +93,7 @@ button {
   border-radius: 8px;
   background-color: var(--white);
   box-shadow: var(--shadow-icon);
+  cursor: pointer;
 }
 
 .icon svg {
@@ -145,6 +146,10 @@ button {
   border-radius: 2rem;
   background-color: var(--base);
   color: var(--white);
+}
+
+.main a svg {
+  stroke: var(--white);
 }
 
 .footer {
@@ -248,5 +253,9 @@ button {
   .main a {
     align-self: flex-start;
     font-size: 1.4rem;
+  }
+
+  .main a:hover {
+    background-color: var(--shadow);
   }
 }
